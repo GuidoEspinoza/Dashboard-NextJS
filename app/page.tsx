@@ -1,6 +1,7 @@
 import { BsArrowRight } from "react-icons/bs"
 import Header from "./components/Header"
 import { bebas } from "./ui/fonts"
+import Link from "next/link"
 
 
 const Home = () => {
@@ -12,9 +13,9 @@ const Home = () => {
                     <p className={`${bebas.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
                         <strong>Welcome to DonGudi Dev</strong> Tutorial NextJS
                     </p>
-                    <a href="/dashboard" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
+                    <Link href="/dashboard" className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
                         <span>Dashboard</span> <BsArrowRight />
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
                     <img src="/hero-desktop.png" alt="Screenshots of the dashboard" width={1000} height={700} className="hidden md:block" />
