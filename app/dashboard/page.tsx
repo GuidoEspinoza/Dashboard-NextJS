@@ -1,5 +1,3 @@
-import SideNav from "../components/SideNav"
-
 
 const Dashboard = () => {
     return (
